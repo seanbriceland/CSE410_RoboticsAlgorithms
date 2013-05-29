@@ -1,0 +1,67 @@
+###################################################
+Sean Briceland
+cse410 - Hwk#1
+UB Person# 34093415
+###################################################
+
+Contents of Zip are as follows:-
+
+###################################################
+###################################################
+1) Code folder contains all MatLab source files
+
+Important Coding files:
+
+main.m 
+- Main file with loops to "drive" Q-learning on our Windy Gridy World
+
+explore_a.m 
+- 10 percent of the time we want to "explore" paths
+- by taking a random action: either up, down, left or right
+- if we only followed the policy we may not explore the optimal path
+
+policy.m
+- Standard Q-Learning policy according to E-Greedy
+- Note: Since we already took care of a 10% random action,
+-   this policy will strictly deal with the 90% of time in which
+-   E-Greedy selects the action with the highest estimated reward.
+
+get_next_q.m
+- Takes the current state and an action in order to return next state
+- check for windy state, which will be given the value of 0-no or 1-yes
+
+windy_check.m
+- Checks if state is windy, then returns a 0 or 1.
+###################################################
+
+###################################################
+###################################################
+2) Graphs Folder Contains all Plots and Graphs 
+requested.
+
+values used:
+
+alpha = 0.1, gamma = 0.9, 
+
+Q function initialization values:
+r = 5
+c = 6
+a = 4
+SET ALL Values to 10 (see init_qf for more details)
+
+count_conv = 300; //this was my convergence counter
+There were times when I would run it and it would converge as quickly as 175
+but for a safer count, I've been finding that 300 is a better number since
+there were a few anomolies that had not fully converged around the mid 250 epispdes.
+
+Plot_RewardsPerEpisode.pdf - this is my current rewards per episode plot.
+I was having a tough time zooming out, but I was able to move the view up to
+display a clearer picture of the reward hitting 10 and converging as a flat
+line(at reward = 10).
+###################################################
+
+###################################################
+###################################################
+3) Log folder contains a log(hw1.log) of my codes output for 300 episodes.
+The log shows the consecutive state transitions that took place for each of the episodes.
+
