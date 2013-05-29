@@ -102,5 +102,3 @@ Length of shortest path = 13
 
 iv) Although I left my # of nodes generated = 5500, I was able to find the goal with lesser amounts of nodes.
 There were many cases with 1,000 - 3,000 nodes and higher radius. However, I stuck with generating 5500 nodes and a smaller radius as it was more consistent and found a more direct(maybe not shorter node wise) path. Also, there are a few additional files that I created (get_coords.m, get_configs.m), however I am not using them at the moment. I am keeping them in case my RRT implementation calls upon them.
-
-Also, as you can see I have not listed my RRT information here yet. I hope to do so ASAP. 
