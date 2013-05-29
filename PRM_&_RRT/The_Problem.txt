@@ -1,14 +1,32 @@
 **PRM and RRT for a two-link robot arm**
-This homework assignment is to solve a motion planning problem for a two-link robot arm once using PRM (use the off-line version of PRM that first creates the graph and then searches for a path from start to goal) and again using RRT. See the figure above. RRT should start tree construction at the start configuration. Your PRM code should use breadth first search (BFS) to search for a path.
+This homework assignment is to solve a motion planning problem for a two-link robot arm 
+Once using PRM:
+- use the off-line version of PRM that first creates the graph and then searches for a path from start to goal
+Second using RRT. 
 
-The configuration of the arm is defined by two joint angles. The first measures (in degrees) the angle between the first link and the horizontal axis. The second measures the angle by which the second link is rotated (with respect to the first link) starting from parallel with the first link. (So, for example, the arm is completely extended when the second joint angle is zero.) The lengths of each of the two robot links is 1.0. The starting configuration for the arm is at (45,-45) (in degrees). The ending configuration is at (135,45) (see Figure).
+See the figure above. 
 
-Neither joint has joint limits. However, there are three obstacles in the evironment, as illustrated in the figure. One obstacle is a large rectangle that has it's lower left corner at 1,1. Another obstacle is a large rectangle with a lower right corner located at -1,1. The third obstacle is located everywhere below the horizontal axis (free space only exists above the horizontal axis.
+RRT should start tree construction at the start configuration.
+Your PRM code should use breadth first search (BFS) to search for a path.
 
-The programming should be done in MATLAB or Octave. Students may get access to MATLAB here. Alternatively, students may code in Python (using Numpy). If the student would rather code in a different language, please see Dr Platt.
+The configuration of the arm is defined by two joint angles. 
+The first measures (in degrees) the angle between the first link and the horizontal axis. 
+The second measures the angle by which the second link is rotated (with respect to the first link) 
+starting from parallel with the first link.
+(So, for example, the arm is completely extended when the second joint angle is zero.)
+The lengths of each of the two robot links is 1.0. The starting configuration for the arm is at (45,-45) (in degrees).
+The ending configuration is at (135,45) (see Figure).
+
+Neither joint has joint limits. However, there are three obstacles in the evironment, as illustrated in the figure. 
+One obstacle is a large rectangle that has it's lower left corner at 1,1. 
+Another obstacle is a large rectangle with a lower right corner located at -1,1. 
+The third obstacle is located everywhere below the horizontal axis (free space only exists above the horizontal axis.
+
+The programming should be done in MATLAB or Octave. 
 
 Notes and updates:
-
 Please use your own implementation of BFS (breadth first search) in PRM. Do not use a Matlab implementation.
-
-As discussed in class, your implementation of RRT should use periodic goal sampling. That is, the RRT algorithm should sample the goal configuration some (small) fixed percentage of the time. This way, the algorithm has a non-zero probability of eventually placing a sample in the goal configuration and terminating.
+As discussed in class, your implementation of RRT should use periodic goal sampling. 
+That is, the RRT algorithm should sample the goal configuration some (small) fixed percentage of the time. 
+This way, the algorithm has a non-zero probability of eventually placing a sample in the goal configuration
+and terminating.
