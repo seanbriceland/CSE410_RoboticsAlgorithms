@@ -12,6 +12,6 @@ The programming should be done in MATLAB. Students may get access to MATLAB here
 
 You can initialize the Q function randomly or you can initialize it to a uniform value of 10. That is, you can initialize Q such that each value in the table is equal to 10.
 
-There have been questions about how to know when the algorithm has converged. The algorithm has converged when the value function has stopped changing signficantly and the policy has stopped changing completely. Since we are using q-learning, the algorithm should converge to a single optimal policy.
+There have been questions about how to know when the algorithm has converged. The algorithm has converged when the value function has stopped changing signficantly and the policy has stopped changing completely. Since we are using q-learning, the algorithm should converge to a single optimal policy. 
 
 Please also submit a short readme file with your homework that enumerates the important files in your submission.
