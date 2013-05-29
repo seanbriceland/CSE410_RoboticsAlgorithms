@@ -1,0 +1,5 @@
+%initializes the q function with values of all 10 for each state and each
+%action, qf
+function [qf] = init_qf()
+qf = 10 * ones(5, 6, 4);
+end
